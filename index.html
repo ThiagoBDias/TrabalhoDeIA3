@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sementes</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .inputs {
+      background-color: #fffdfd;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      text-align: center;
+    }
+    .input-container {
+      background-color: #f7f6f6;
+      padding: 18px;
+    }
+    .input-container input {
+      width: 100%;
+      padding: 5px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: center; /* Centralizar horizontalmente */
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="inputs">
+    <div class="input-container">
+      <h2>Largura do Grão</h2>
+      <input id="largura" type="number" placeholder="Largura do Grão" value="4.899">
+    </div>
+    <div class="input-container">
+      <h2>Comprimento do grão</h2>
+      <input id="comprimento" type="number" placeholder="Comprimento do Grão" value="2.787">
+    </div>
+    <div class="input-container">
+      <h2>comprimento do sulco do núcleo</h2>
+      <input id="nucleo" type="number" placeholder="comprimento do sulco do núcleo" value="4.794">
+    </div>
+    <div class="botoes">
+      <button class="enviar" id="enviar" onclick="calc()">Enviar</button>
+      <button class="limpar" id="limpar">Limpar</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
